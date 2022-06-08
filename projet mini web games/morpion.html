@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Morpion</title>
+  <link href="Morpion_style.css" rel="stylesheet" type="text/css" />
+  <script src="Morpion_script.js"></script>
+</head>
+
+<body>
+  <div class="header">
+    <table class="header_table">
+      <tr>
+        <td class="title"><h1>Mini Jeux</h1></td>
+        <td class="espace"></td>
+        <td class="nav_items">
+          <ul>
+            <li class="nav_item"><a href="index.html">Memory</a></li>
+            <li class="nav_item"><a href="morpion.html">Morpion</a></li>
+            <li class="nav_item"><a href="puissance4.html">Puissance 4</a></li>
+          </ul>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  
+  <center><h1>Morpion</h1></center>
+  <center><p class="paragraphe_player" id="paragraphe_player">C'est aux cercles de jouer.</p></center>
+  <div class="main_morpion">
+    <table>
+      <tr>
+        <td><div class="morpion_element"><button class="morpion_button" id="morpion_button1" onclick="morpion_click(this.id)"></button></div></td>
+        <td><div class="morpion_element"><button class="morpion_button" id="morpion_button2" onclick="morpion_click(this.id)"></button></div></td>
+        <td><div class="morpion_element"><button class="morpion_button" id="morpion_button3" onclick="morpion_click(this.id)"></button></div></td>
+      </tr>
+      <tr>
+        <td><div class="morpion_element"><button class="morpion_button" id="morpion_button4" onclick="morpion_click(this.id)"></button></div></td>
+        <td><div class="morpion_element"><button class="morpion_button" id="morpion_button5" onclick="morpion_click(this.id)"></button></div></td>
+        <td><div class="morpion_element"><button class="morpion_button" id="morpion_button6" onclick="morpion_click(this.id)"></button></div></td>
+      </tr>
+      <tr>
+        <td><div class="morpion_element"><button class="morpion_button" id="morpion_button7" onclick="morpion_click(this.id)"></button></div></td>
+        <td><div class="morpion_element"><button class="morpion_button" id="morpion_button8" onclick="morpion_click(this.id)"></button></div></td>
+        <td><div class="morpion_element"><button class="morpion_button" id="morpion_button9" onclick="morpion_click(this.id)"></button></div></td>
+      </tr>
+    </table>
+  </div>
+  <center><button id="abandonner_button" class="abandonner_button" onclick="reinitialiser()">Abandonner</button></center>
+</body>
+
+</html>

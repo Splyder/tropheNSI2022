@@ -1,0 +1,101 @@
+.main_puissance4{
+  height: 480px;
+  width: 555px;
+  background: #1005a3;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main_buttons_puissance4{
+  height: 80px;
+  width: 555px;
+  background: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.puissance4_element{
+  margin: 0px;
+  background-color:white;
+  border: none; 
+  width: 50px;
+  height: 50px;
+  margin:12.5px;
+  cursor: pointer;
+  border-radius:90px;
+}
+
+.puissance4_button{
+  margin: 0px;
+  background-color:#bdbdbd;
+  border: none; 
+  width: 50px;
+  height: 50px;
+  margin:12.5px;
+  cursor: pointer;
+  border-radius:90px;
+}
+
+.paragraphe_player{
+  border:solid;
+  border-radius:20px;
+  height:30px;
+  width:315px;
+  text-align : center;
+  
+}
+
+/*Code pour le header*/
+.header{
+  display:block;
+  height:150px;
+  width:100%;
+  margin-bottom:30px;
+  background-color:#cccccc;
+  border-radius:30px;
+}
+
+.espace{
+  width:40%;
+}
+
+.nav_item{
+  width:160px;
+  height:30px;
+  border-radius:30px;
+  font-size:20px;
+  background-color:#a5aec0;
+  text-align:center;
+  margin:2px;
+}
+
+.nav_item a{
+  color:black;
+  text-decoration: none;
+}
+
+.title h1{
+  font-size:90px;
+  margin:20px;
+}
+
+a:hover{
+  color: white;
+}
+
+a:active{
+  color: red;
+}
+
+button:hover{
+  border-color: green;
+}
+
+.abandonner_button{
+  width: 250px;
+  border: solid;
+  background-color: skyblue;
+  border-color: darkred;
+}
+
+li{list-style-type:none;}

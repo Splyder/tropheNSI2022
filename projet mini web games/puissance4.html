@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Puissance 4</title>
+  <link href="Puissance_style.css" rel="stylesheet" type="text/css" />
+  <script src="Puissance_script.js"></script>
+</head>
+
+<body>
+  <div class="header">
+    <table class="header_table">
+      <tr>
+        <td class="title"><h1>Mini Jeux</h1></td>
+        <td class="espace"></td>
+        <td class="nav_items">
+          <ul>
+            <li class="nav_item"><a href="index.html">Memory</a></li>
+            <li class="nav_item"><a href="morpion.html">Morpion</a></li>
+            <li class="nav_item"><a href="puissance4.html">Puissance 4</a></li>
+          </ul>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  
+  <center><h1>Puissance 4</h1></center>
+  <center><p class="paragraphe_player" id="paragraphe_player">C'est aux jaunes de jouer.</p>    </center>
+  <div class="main_buttons_puissance4">
+    <table>
+      <tr>
+        <td><button class="puissance4_button" id="puissance4_button00" onclick="puissance4_click(this.id)"></button></td>
+        <td><button class="puissance4_button" id="puissance4_button01" onclick="puissance4_click(this.id)"></button></td>
+        <td><button class="puissance4_button" id="puissance4_button02" onclick="puissance4_click(this.id)"></button></td>
+        <td><button class="puissance4_button" id="puissance4_button03" onclick="puissance4_click(this.id)"></button></td>
+        <td><button class="puissance4_button" id="puissance4_button04" onclick="puissance4_click(this.id)"></button></td>
+        <td><button class="puissance4_button" id="puissance4_button05" onclick="puissance4_click(this.id)"></button></td>
+        <td><button class="puissance4_button" id="puissance4_button06" onclick="puissance4_click(this.id)"></button></td>
+      </tr>
+      
+    </table>
+  </div>
+  <div class="main_puissance4">
+    <table>
+      <tr>
+        <td><div class="puissance4_element" id="tuile00"></div></td>
+        <td><div class="puissance4_element" id="tuile01"></div></td>
+        <td><div class="puissance4_element" id="tuile02"></div></td>
+        <td><div class="puissance4_element" id="tuile03"></div></td>
+        <td><div class="puissance4_element" id="tuile04"></div></td>
+        <td><div class="puissance4_element" id="tuile05"></div></td>
+        <td><div class="puissance4_element" id="tuile06"></div></td>
+      </tr>
+      <tr>
+        <td><div class="puissance4_element" id="tuile07"></div></td>
+        <td><div class="puissance4_element" id="tuile08"></div></td>
+        <td><div class="puissance4_element" id="tuile09"></div></td>
+        <td><div class="puissance4_element" id="tuile10"></div></td>
+        <td><div class="puissance4_element" id="tuile11"></div></td>
+        <td><div class="puissance4_element" id="tuile12"></div></td>
+        <td><div class="puissance4_element" id="tuile13"></div></td>
+      </tr>
+      <tr>
+        <td><div class="puissance4_element" id="tuile14"></div></td>
+        <td><div class="puissance4_element" id="tuile15"></div></td>
+        <td><div class="puissance4_element" id="tuile16"></div></td>
+        <td><div class="puissance4_element" id="tuile17"></div></td>
+        <td><div class="puissance4_element" id="tuile18"></div></td>
+        <td><div class="puissance4_element" id="tuile19"></div></td>
+        <td><div class="puissance4_element" id="tuile20"></div></td>
+      </tr>
+      <tr>
+        <td><div class="puissance4_element" id="tuile21"></div></td>
+        <td><div class="puissance4_element" id="tuile22"></div></td>
+        <td><div class="puissance4_element" id="tuile23"></div></td>
+        <td><div class="puissance4_element" id="tuile24"></div></td>
+        <td><div class="puissance4_element" id="tuile25"></div></td>
+        <td><div class="puissance4_element" id="tuile26"></div></td>
+        <td><div class="puissance4_element" id="tuile27"></div></td>
+      </tr>
+      <tr>
+        <td><div class="puissance4_element" id="tuile28"></div></td>
+        <td><div class="puissance4_element" id="tuile29"></div></td>
+        <td><div class="puissance4_element" id="tuile30"></div></td>
+        <td><div class="puissance4_element" id="tuile31"></div></td>
+        <td><div class="puissance4_element" id="tuile32"></div></td>
+        <td><div class="puissance4_element" id="tuile33"></div></td>
+        <td><div class="puissance4_element" id="tuile34"></div></td>
+      </tr>
+      <tr>
+        <td><div class="puissance4_element" id="tuile35"></div></td>
+        <td><div class="puissance4_element" id="tuile36"></div></td>
+        <td><div class="puissance4_element" id="tuile37"></div></td>
+        <td><div class="puissance4_element" id="tuile38"></div></td>
+        <td><div class="puissance4_element" id="tuile39"></div></td>
+        <td><div class="puissance4_element" id="tuile40"></div></td>
+        <td><div class="puissance4_element" id="tuile41"></div></td>
+      </tr>
+    </table>
+  </div>
+  <center><button id="abandonner_button" class="abandonner_button" onclick="reinitialiser()">Abandonner / Rejouer</button></center>
+</body>
+
+</html>

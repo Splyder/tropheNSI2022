@@ -1,0 +1,124 @@
+.main_memory{
+  height: 643px;
+  width: 628px;
+  background: #B8B6B5;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.memory_tuile_button{
+  margin: 0px;
+  background:url(images/test.png) no-repeat;
+  background-size: 100px 100px;
+  border: none; 
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+}
+
+.centrer{
+  text-align : center;
+}
+
+.chargement {
+  width:628px;
+  height:30px;
+}
+
+
+.chronometre{
+  border:solid;
+  width:210px;
+  height:70px;
+  text-align: center;
+  float:left;
+  display:block;
+  border-color:gold;
+  background-color: grey;
+}
+
+.chronometre_paragraphe{
+  font-size : 150%;
+}
+
+h1.game_title{
+  text-decoration: underline;
+  color:red;
+}
+
+.game_text{
+  width:628px;
+  color:darkblue;
+}
+
+.find{
+  border:-2px solid;
+  border-color:green;
+  margin: 0px;
+  background-size: 100px 100px;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+}
+
+.nav_item a{
+  color:black;
+  text-decoration: none;
+}
+
+.title h1{
+  font-size:90px;
+  margin:20px;
+}
+
+.header{
+  display:block;
+  height:150px;
+  width:100%;
+  margin-bottom:30px;
+  background-color:#cccccc;
+  border-radius:30px;
+}
+
+.espace{
+  width:40%;
+}
+
+.nav_item{
+  width:160px;
+  height:30px;
+  border-radius:30px;
+  font-size:20px;
+  background-color:#a5aec0;
+  text-align:center;
+  margin:2px;
+}
+
+.start_button{
+  width: 250px;
+  border: solid;
+  background-color: skyblue;
+  border-color: blue;
+}
+
+.abandonner_button{
+  width: 250px;
+  border: solid;
+  background-color: skyblue;
+  border-color: darkred;
+}
+
+/*changement de couleur au moment où la souris est sur le lien*/ 
+a:hover{
+  color: white;
+}
+/*la couleur est activé quand le lien est pris*/ 
+a:active{
+  color: red;
+}
+/*changement de couleur au moment où la souris est sur le lien*/
+button:hover{
+  border-color: green;
+}
+
+li{list-style-type:none;}

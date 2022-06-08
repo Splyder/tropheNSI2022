@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>NSI Memory</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <div class="header">
+    <table class="header_table">
+      <tr>
+        <td class="title"><h1>Mini Jeux</h1></td>
+        <td class="espace"></td>
+        <td class="nav_items">
+          <ul>
+            <li class="nav_item"><a href="index.html">Memory</a></li>
+            <li class="nav_item"><a href="morpion.html">Morpion</a></li>
+            <li class="nav_item"><a href="puissance4.html">Puissance 4</a></li>
+          </ul>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <center>
+    <h1 class="game_title">Memory</h1>
+    <p class="game_text" id="game_text">Retrouvez ici de nombreux jeux de Memory. Ces jeux sont parfaits pour entraîner votre mémoire ou pour tout simplement s'amuser. Vous voulez jouer au Memory et vous n'avez pas le fameux jeu de société? Pas de problème! Ce jeu gratuit en ligne est fait pour vous. Les cartes peuvent représenter des images, des photos, des personnes, des objets, des drapeaux, des lettres, des nombres et bien d'autres...</p>
+  </center>
+
+  
+  
+  <center>
+  <progress id="chargement" class="chargement" max="100" value="0">0%</progress>
+  </center>
+
+    <div class="chronometre">
+    <p class="chronometre_paragraphe">
+     
+  <h2><time>00:00:00</time></h2>
+      </p>
+  </div>
+  
+  <div class="main_memory">
+    <table>
+      <tr>
+        <td>
+          <button class="memory_tuile_button" id="memory_tuile_button01" onclick="memory_button(this.id)"></button>
+        </td>
+        <td>
+          <button class="memory_tuile_button" id="memory_tuile_button02" onclick="memory_button(this.id)"></button>
+        </td>
+
+        <td>
+          <button class="memory_tuile_button" id="memory_tuile_button03" onclick="memory_button(this.id)"></button>
+        </td>
+        <td>
+            <button class="memory_tuile_button" id="memory_tuile_button04" onclick="memory_button(this.id)"></button>
+        </td>
+        <td>
+            <button class="memory_tuile_button" id="memory_tuile_button05" onclick="memory_button(this.id)"></button>
+        </td>
+        <td>
+            <button class="memory_tuile_button" id="memory_tuile_button06" onclick="memory_button(this.id)"></button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+            <button class="memory_tuile_button" id="memory_tuile_button07" onclick="memory_button(this.id)"></button>
+        </td>
+        <td>
+            <button class="memory_tuile_button" id="memory_tuile_button08" onclick="memory_button(this.id)"></button>
+        </td>
+        <td>
+            <button class="memory_tuile_button" id="memory_tuile_button09" onclick="memory_button(this.id)"></button>
+        </td>
+        <td>
+            <button class="memory_tuile_button" id="memory_tuile_button10" onclick="memory_button(this.id)"></button>
+        </td>
+        <td>
+            <button class="memory_tuile_button" id="memory_tuile_button11" onclick="memory_button(this.id)"></button>
+        </td>
+        <td>
+            <button class="memory_tuile_button" id="memory_tuile_button12" onclick="memory_button(this.id)"></button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+            <button class="memory_tuile_button" id="memory_tuile_button13" onclick="memory_button(this.id)"></button>
+        </td>
+        <td>
+            <button class="memory_tuile_button" id="memory_tuile_button14" onclick="memory_button(this.id)"></button>
+        </td>
+        <td>
+            <button class="memory_tuile_button" id="memory_tuile_button15" onclick="memory_button(this.id)"></button>
+        </td>
+        <td>
+            <button class="memory_tuile_button" id="memory_tuile_button16" onclick="memory_button(this.id)"></button>
+        </td>
+        <td>
+            <button class="memory_tuile_button" id="memory_tuile_button17" onclick="memory_button(this.id)"></button>
+        </td>
+        <td>
+            <button class="memory_tuile_button" id="memory_tuile_button18" onclick="memory_button(this.id)"></button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+            <button class="memory_tuile_button" id="memory_tuile_button19" onclick="memory_button(this.id)"></button>
+        </td>
+        <td>
+            <button class="memory_tuile_button" id="memory_tuile_button20" onclick="memory_button(this.id)"></button>
+        </td>
+        <td>
+            <button class="memory_tuile_button" id="memory_tuile_button21" onclick="memory_button(this.id)"></button>
+        </td>
+        <td>
+            <button class="memory_tuile_button" id="memory_tuile_button22" onclick="memory_button(this.id)"></button>
+        </td>
+        <td>
+            <button class="memory_tuile_button" id="memory_tuile_button23" onclick="memory_button(this.id)"></button>
+        </td>
+        <td>
+            <button class="memory_tuile_button" id="memory_tuile_button24" onclick="memory_button(this.id)"></button>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+            <button class="memory_tuile_button" id="memory_tuile_button25" onclick="memory_button(this.id)"></button>
+        </td>
+        <td>
+            <button class="memory_tuile_button" id="memory_tuile_button26" onclick="memory_button(this.id)"></button>
+        </td>
+        <td>
+            <button class="memory_tuile_button" id="memory_tuile_button27" onclick="memory_button(this.id)"></button>
+        </td>
+        <td>
+            <button class="memory_tuile_button" id="memory_tuile_button28" onclick="memory_button(this.id)"></button>
+        </td>
+        <td>
+            <button class="memory_tuile_button" id="memory_tuile_button29" onclick="memory_button(this.id)"></button>
+        </td>
+        <td>
+            <button class="memory_tuile_button" id="memory_tuile_button30" onclick="memory_button(this.id)"></button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+            <button class="memory_tuile_button" id="memory_tuile_button31" onclick="memory_button(this.id)"></button>
+        </td>
+        <td>
+            <button class="memory_tuile_button" id="memory_tuile_button32" onclick="memory_button(this.id)"></button>
+        </td>
+        <td>
+            <button class="memory_tuile_button" id="memory_tuile_button33" onclick="memory_button(this.id)"></button>
+        </td>
+        <td>
+            <button class="memory_tuile_button" id="memory_tuile_button34" onclick="memory_button(this.id)"></button>
+        </td>
+        <td>
+            <button class="memory_tuile_button" id="memory_tuile_button35" onclick="memory_button(this.id)"></button>
+        </td>
+        <td>
+            <button class="memory_tuile_button" id="memory_tuile_button36" onclick="memory_button(this.id)"></button>
+        </td>
+      </tr>
+    </table>
+  </div>
+<br>
+  <div class="centrer">
+    <center>
+    <table>
+      <tr>
+        <td>
+          <button id="start_button" class="start_button" onclick="play_memory()">Start Game</button>
+          <button id="abandonner_button" class="abandonner_button" onclick="abandonner()">Abandonner</button>
+        </td>
+      </tr>
+    </table>
+    </center>
+  </div>
+</body>
+</html>
